@@ -8,14 +8,11 @@ import HOSPTEC from '../../../assets/images/login/HOSPTEC.svg';
 
 import { Input } from '../../../components/Input';
 
-
-
-
-export function EsqueceuPasso1(){
+const EsqueceuPasso1 = () => {
 
     const[inputEmail, setInputEmail] = React.useState('')
 
- 
+
     const email = (document.getElementById("email") as HTMLInputElement)
     const btn = (document.getElementById("btn-search") as HTMLButtonElement)
     const loginForm = document.querySelector("#loginForm")
@@ -28,7 +25,7 @@ export function EsqueceuPasso1(){
             }
         })
 
-        
+
 
     const navigate = useNavigate();
         function handleLogin(){
@@ -52,7 +49,7 @@ export function EsqueceuPasso1(){
                                 <p>Digite seu e-mail</p>
                                 <Input
                                 id="email"
-                                type="email" 
+                                type="email"
                                 placeholder="exemplo@email.com"
                                 onChange={(e) => setInputEmail(e.target.value)}
                                 required/>
@@ -71,9 +68,11 @@ export function EsqueceuPasso1(){
                         <strong className="title">Esqueceu a senha?</strong>
                         <p>Redefine agora mesmo.</p>
                         <img src={FORGOTPASS} alt="Ilustratacao simbolizando chave de esqueceu senha"></img>
-                    </SecondColumn>       
-                </Content>      
-            </Container>               
+                    </SecondColumn>
+                </Content>
+            </Container>
         </div>
     )
 }
+
+export default EsqueceuPasso1

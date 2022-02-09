@@ -8,7 +8,7 @@ import HOSPTEC from '../../../assets/images/login/HOSPTEC.svg';
 
 
 
-export function EsqueceuPasso2(){
+const EsqueceuPasso2 = () => {
 
     const [selectedRadioBtn, setSelectedRadioBtn] = React.useState('radio1');
     const isRadioSelected = (value: string): boolean => selectedRadioBtn === value;
@@ -71,9 +71,11 @@ export function EsqueceuPasso2(){
                         <strong className="title">Esqueceu a senha?</strong>
                         <p>Redefine agora mesmo.</p>
                         <img src={FORGOTPASS} alt="Ilustratacao simbolizando chave de esqueceu senha"></img>
-                    </SecondColumn>       
-                </Content>      
-            </Container>               
+                    </SecondColumn>
+                </Content>
+            </Container>
         </div>
     )
 }
+
+export default EsqueceuPasso2

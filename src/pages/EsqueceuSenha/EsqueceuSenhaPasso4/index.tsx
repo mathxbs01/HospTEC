@@ -8,9 +8,7 @@ import HOSPTEC from '../../../assets/images/login/HOSPTEC.svg';
 
 import { Input } from '../../../components/Input';
 
-
-
-export function EsqueceuPasso4(){
+const EsqueceuPasso4 = () => {
 
     const[inputPassword, setInputPassword] = React.useState('')
 
@@ -98,9 +96,11 @@ export function EsqueceuPasso4(){
                         <strong className="title">Esqueceu a senha?</strong>
                         <p>Redefine agora mesmo.</p>
                         <img src={FORGOTPASS} alt="Ilustratacao simbolizando chave de esqueceu senha"></img>
-                    </SecondColumn>       
-                </Content>      
-            </Container>               
+                    </SecondColumn>
+                </Content>
+            </Container>
         </div>
     )
 }
+
+export default EsqueceuPasso4

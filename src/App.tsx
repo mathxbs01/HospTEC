@@ -1,17 +1,15 @@
-import { createContext, useState} from 'react'
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-
-import { Login } from "./pages/login/login/index";
-import { CadastroPasso1 } from "./pages/login/cadastroPasso1/index";
-import { CadastroPasso2 } from "./pages/login/cadastroPasso2/index";
-import { EsqueceuPasso1 } from "./pages/login/esqueceuSenhaPasso1/index";
-import { EsqueceuPasso2 } from "./pages/login/esqueceuSenhaPasso2/index";
-import { EsqueceuPasso3 } from "./pages/login/esqueceuSenhaPasso3/index";
-import { EsqueceuPasso4 } from "./pages/login/esqueceuSenhaPasso4/index";
-
-import { HomePaciente } from "./pages/paciente/home/index";
-
-
+import {
+  BrowserRouter,
+  Routes,
+  Route } from "react-router-dom";
+import Login from "./pages/Login";
+import CadastroPasso1 from "./pages/Cadastro/CadastroPasso1";
+import CadastroPasso2 from "./pages/Cadastro/CadastroPasso2";
+import EsqueceuPasso1 from "./pages/EsqueceuSenha/EsqueceuSenhaPasso1";
+import EsqueceuPasso2 from "./pages/EsqueceuSenha/EsqueceuSenhaPasso2";
+import EsqueceuPasso3 from "./pages/EsqueceuSenha/EsqueceuSenhaPasso3";
+import EsqueceuPasso4 from "./pages/EsqueceuSenha/EsqueceuSenhaPasso4";
+import HomePaciente from "./pages/HomePacientes";
 
 function App(){
 

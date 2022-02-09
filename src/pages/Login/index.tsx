@@ -3,15 +3,12 @@ import React, { InputHTMLAttributes, useCallback } from 'react';
 
 import { Container, Content, FirstColumn, Form, ModalIntern, SecondColumn, Separator} from './style';
 
-import illustrationMulher from 'c:/Hosptec/hosptec/src/assets/images/login/loginMulher.svg';
-import HOSPTEC from 'c:/Hosptec/hosptec/src/assets/images/login/HOSPTEC.svg';
+import illustrationMulher from '../../../assets/images/login/loginMulher.svg';
+import HOSPTEC from '../../../assets/images/login/HOSPTEC.svg';
 
-import { Input } from 'C:/Hosptec/hosptec/src/components/Input';
+import { Input } from '../../../components/Input';
 
-
-
-
-export function Login(){
+const Login = () => {
 
     const[inputEmail, setInputEmail] = React.useState('')
     const[inputPassword, setInputPassword] = React.useState('')
@@ -30,7 +27,7 @@ export function Login(){
             password = !password;
         })
 
- 
+
     const email = (document.getElementById("email") as HTMLInputElement)
     const pass = (document.getElementById("pass") as HTMLInputElement)
     const btn = (document.getElementById("btn") as HTMLButtonElement)
@@ -65,7 +62,7 @@ export function Login(){
                                 <p>Digite seu e-mail</p>
                                 <Input
                                 id="email"
-                                type="email" 
+                                type="email"
                                 placeholder="exemplo@email.com"
                                 onChange={(e) => setInputEmail(e.target.value)}
                                 required/>
@@ -81,7 +78,7 @@ export function Login(){
                                 <button type="submit" id="btn" disabled>Entrar</button>
                                 <a onClick={ForgotPassword} >Esqueceu a senha?</a>
                                 <Separator />
-                                <a onClick={handleCreateUser}>Quero me cadastrar</a> 
+                                <a onClick={handleCreateUser}>Quero me cadastrar</a>
                             </Form>
                         </ModalIntern>
                     </FirstColumn>
@@ -89,9 +86,11 @@ export function Login(){
                         <strong className="title">Seja bem-vindo!</strong>
                         <p>Acesse sua conta agora mesmo.</p>
                         <img src={illustrationMulher} alt="Ilustratacao simbolizando um agente da area hospitalar"></img>
-                    </SecondColumn>       
-                </Content>      
-            </Container>               
+                    </SecondColumn>
+                </Content>
+            </Container>
         </div>
     )
 }
+
+export default Login;

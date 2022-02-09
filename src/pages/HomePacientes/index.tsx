@@ -8,7 +8,7 @@ import CAMADAS from '../../../assets/images/home/Camadas.svg';
 
 import { Card } from './style';
 
-export function HomePaciente(){ 
+const HomePaciente = () => {
 
 
     return(
@@ -19,9 +19,11 @@ export function HomePaciente(){
                         <img src={MinhasConsultas}/>
                         <p>Teste</p>
                     </Card>
-                    
+
                 </div>
             </BackgroundHome>
         </div>
     )
 }
+
+export default HomePaciente

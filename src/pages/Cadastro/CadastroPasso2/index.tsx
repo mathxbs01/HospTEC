@@ -8,14 +8,14 @@ import HOSPTEC from '../../../assets/images/login/HOSPTEC.svg';
 
 
 
-export function CadastroPasso2(){
+const CadastroPasso2 = () => {
 
     const [inputCep, setInputCep] = React.useState('');
     const cep = (document.getElementById("cep") as HTMLInputElement);
     const address = (document.getElementById("address") as HTMLInputElement);
     const neighborhood = (document.getElementById("neighborhood") as HTMLInputElement);
     const city= (document.getElementById("city") as HTMLInputElement);
-    const uf = (document.getElementById("uf") as HTMLInputElement);    
+    const uf = (document.getElementById("uf") as HTMLInputElement);
 
     const searchCep = async() => {
         const cepValue = cep.value;
@@ -29,16 +29,16 @@ export function CadastroPasso2(){
             city.value = endereco.localidade;
             neighborhood.value = endereco.bairro;
             address.value = endereco.logradouro;
-        }    
+        }
     }
 
-    
+
     cep?.addEventListener("focusout", searchCep);
 
 
 
 
-    
+
     const navigateLogin = useNavigate();
         function handleLogin(){
             navigateLogin('/');
@@ -53,14 +53,14 @@ export function CadastroPasso2(){
                         <Header>
                             <img src={HOSPTEC} alt="Logo HospTec" onClick={handleLogin}/>
                             <p>Por favor, insira seu dados válidos para realizar o cadastro!</p>
-                        </Header>   
+                        </Header>
                         <Form>
                             <InputForm>
                                 <LineForm>
                                     <p>Digite seu CEP</p>
                                     <InputCEP
                                     id="cep"
-                                    type="text" 
+                                    type="text"
                                     placeholder="XXXXX-XXX"
                                     onChange={(e) => setInputCep(e.target.value)}
                                     required
@@ -81,7 +81,7 @@ export function CadastroPasso2(){
                                     <p>Cidade</p>
                                     <Input
                                     id="city"
-                                    type="text" 
+                                    type="text"
                                     placeholder="Exemplo"
                                     disabled
                                     required
@@ -91,7 +91,7 @@ export function CadastroPasso2(){
                                     <p>Bairro</p>
                                     <Input
                                     id="neighborhood"
-                                    type="text" 
+                                    type="text"
                                     placeholder="Exemplo"
                                     disabled
                                     required
@@ -103,7 +103,7 @@ export function CadastroPasso2(){
                                     <p>Rua</p>
                                     <Input
                                     id="address"
-                                    type="text" 
+                                    type="text"
                                     placeholder="Exemplo"
                                     disabled
                                     required
@@ -113,7 +113,7 @@ export function CadastroPasso2(){
                                     <p>Número</p>
                                     <Input
                                     id="rua"
-                                    type="text" 
+                                    type="text"
                                     placeholder="XXXXX"
                                     required
                                     />
@@ -124,16 +124,18 @@ export function CadastroPasso2(){
                                     <p>Complemento</p>
                                     <Input
                                     id="complemento"
-                                    type="text" 
+                                    type="text"
                                     placeholder="Exemplo"
                                     />
                                 </LineFull>
                             </InputForm>
                             <ButtonNext type="submit" id="btn-next" onClick={handleLogin}>Concluir</ButtonNext>
-                        </Form>  
+                        </Form>
                     </div>
                 </Content>
             </Container>
-        </div>              
+        </div>
     )
 }
+
+export default CadastroPasso2
