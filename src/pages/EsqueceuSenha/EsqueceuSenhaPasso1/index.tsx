@@ -6,7 +6,7 @@ import { Container, Content, FirstColumn, Form, ModalIntern, SecondColumn} from 
 import FORGOTPASS from '../../../assets/images/login/EsqueceuSenha.svg';
 import HOSPTEC from '../../../assets/images/login/HOSPTEC.svg';
 
-import { Input } from '../../../components/Input';
+import { Input } from '../../../components/Input/Input';
 
 const EsqueceuPasso1 = () => {
 

@@ -63,7 +63,7 @@ export const Form = styled.form`
         width: 100%;
         height: 22px;
         text-align: left;
-        
+
         font-family: Poppins;
         font-style: normal;
         font-weight: bold;
@@ -78,8 +78,8 @@ export const Form = styled.form`
         background: rgba(196, 196, 196, 0.12);
         border: .5px solid #EFEFEF;
         border-radius: 10px;
-        
-        
+
+
         margin-top: 4px;
         margin-bottom: 13px;
 
@@ -109,7 +109,7 @@ export const Form = styled.form`
             color: #818181;
         }
     }
-    
+
 `;
 export const InputForm = styled.div`
     position: relative;
@@ -133,14 +133,14 @@ export const LineForm = styled.div`
 export const UserProfile = styled.div`
     position: relative;
     width: 100%;
-    
+
     p{
         position: relative;
         display: flex;
         width: 100%;
         height: 22px;
         text-align: left;
-        
+
         font-family: Poppins;
         font-style: normal;
         font-weight: bold;
@@ -199,7 +199,7 @@ export const ButtonNext = styled.button`
         position: relative;
         width: 130px;
         height: 22px;
-        
+
         font-family: Poppins;
         font-style: normal;
         font-weight: bold;

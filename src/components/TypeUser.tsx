@@ -1,6 +1,6 @@
 import React, { InputHTMLAttributes, useCallback } from "react"
 import { InputForm, LineForm} from '../pages/login/cadastroPasso1/style';
-import { Input, InputCPF } from './Input';
+import { Input, InputCPF } from './Input/Input';
 
 type InputProps = InputHTMLAttributes<HTMLInputElement>;
 
@@ -13,7 +13,7 @@ export function Paciente(props:InputProps) {
                 <LineForm>
                     <p>Digite seu CPF</p>
                     <InputCPF
-                    type="text" 
+                    type="text"
                     placeholder="XXX.XXX.XXX-XX"
                     required
                     />
@@ -29,11 +29,11 @@ export function Paciente(props:InputProps) {
             </InputForm>
             <InputForm>
                 <LineForm>
-                    <p>Digite nome completo da sua mãe</p>    
+                    <p>Digite nome completo da sua mãe</p>
                     <Input
-                    type="text" 
+                    type="text"
                     placeholder="Exemplo"
-                    /> 
+                    />
                 </LineForm>
                 <LineForm>
                     <p>Digite nome completo do sua pai</p>
@@ -53,7 +53,7 @@ export function Recepcionista(props:InputProps) {
                 <LineForm>
                     <p>Digite seu CPF</p>
                     <InputCPF
-                    type="text" 
+                    type="text"
                     placeholder="XXX.XXX.XXX-XX"
                     required
                     />
@@ -69,11 +69,11 @@ export function Recepcionista(props:InputProps) {
             </InputForm>
             <InputForm>
                 <LineForm>
-                    <p>Digite nome completo da sua mãe</p>    
+                    <p>Digite nome completo da sua mãe</p>
                     <Input
-                    type="text" 
+                    type="text"
                     placeholder="Exemplo"
-                    /> 
+                    />
                 </LineForm>
                 <LineForm>
                     <p>Digite nome completo do sua pai</p>
@@ -93,7 +93,7 @@ export function Enfermeiro(props:InputProps) {
                 <LineForm>
                     <p>Digite seu CPF</p>
                     <InputCPF
-                    type="text" 
+                    type="text"
                     placeholder="XXX.XXX.XXX-XX"
                     required
                     />
@@ -109,11 +109,11 @@ export function Enfermeiro(props:InputProps) {
             </InputForm>
             <InputForm>
                 <LineForm>
-                    <p>Digite nome completo da sua mãe</p>    
+                    <p>Digite nome completo da sua mãe</p>
                     <Input
-                    type="text" 
+                    type="text"
                     placeholder="Exemplo"
-                    /> 
+                    />
                 </LineForm>
                 <LineForm>
                     <p>Digite nome completo do sua pai</p>
@@ -133,7 +133,7 @@ export function Medico(props:InputProps) {
                 <LineForm>
                     <p>Digite seu CPF</p>
                     <InputCPF
-                    type="text" 
+                    type="text"
                     placeholder="XXX.XXX.XXX-XX"
                     required
                     />
@@ -165,11 +165,11 @@ export function Medico(props:InputProps) {
                     </select>
                 </LineForm>
                 <LineForm>
-                    <p>Digite nome completo da sua mãe</p>    
+                    <p>Digite nome completo da sua mãe</p>
                     <Input
-                    type="text" 
+                    type="text"
                     placeholder="Exemplo"
-                    /> 
+                    />
                 </LineForm>
             </InputForm>
         </div>

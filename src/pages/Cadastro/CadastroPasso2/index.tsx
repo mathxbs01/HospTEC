@@ -1,7 +1,7 @@
 import React, { InputHTMLAttributes, useState, useCallback, Children } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { convertCompilerOptionsFromJson } from 'typescript';
-import { Input, InputCEP } from '../../../components/Input';
+import { Input, InputCEP } from '../../../components/Input/Input';
 import { Container, Content, Header, Form, InputForm, LineForm, ButtonNext, LineFull } from './style';
 
 import HOSPTEC from '../../../assets/images/login/HOSPTEC.svg';

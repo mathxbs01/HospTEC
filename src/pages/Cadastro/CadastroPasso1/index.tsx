@@ -7,7 +7,7 @@ import React, {
 import { useNavigate } from 'react-router-dom';
 import {
   Input,
-  InputPhone } from '../../../components/Input';
+  InputPhone } from '../../../components/Input/Input';
 import {
   Enfermeiro,
   Paciente,
