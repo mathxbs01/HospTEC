@@ -1,10 +1,9 @@
 import { useNavigate } from 'react-router-dom';
 import React, { InputHTMLAttributes, useCallback } from 'react';
 
-import { BackgroundHome } from '../../../components/Home';
+import BackgroundHome from '../../components/BackgroundHome';
 
-import MinhasConsultas from '../../../assets/images/paciente/minhasConsultas.svg'
-import CAMADAS from '../../../assets/images/home/Camadas.svg';
+import MinhasConsultas from '../../assets/paciente/minhasConsultas.svg'
 
 import { Card } from './style';
 

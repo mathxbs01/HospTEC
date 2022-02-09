@@ -20,5 +20,4 @@ body, input, button, textarea{
   font: 400 14px 'Poppins', sans-serif;
 }
 `
-
 export default theme

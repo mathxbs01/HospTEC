@@ -1,11 +1,6 @@
 import styled from "styled-components";
 
 export const Background = styled.div`
-  *{
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-  }
   position: relative;
   display: flex;
   height: 100vh;
@@ -59,40 +54,35 @@ export const Logo = styled.img`
   left: 50%;
   transform: translate(-50%, -50%);
 `
-// .modal-intern{
-//     position: relative;
-//     display: fixed;
+export const InternContainer = styled.div`
+  position: relative;
+  display: fixed;
+  width: 90%;
+  height: 80%;
+  right: -9%;
 
-//     width: 90%;
-//     height: 80%;
-//     right: -9%;
-// }
-// .background-secondWhite-right{
-//     position: relative;
-//     width: 40%;
-//     height: 100%;
-//     left: 60%;
-
-//     background: #FBFBFB;
-//     #illustrationMulherHome{
-//         position: relative;
-//         width: 60%;
-//         height: 60%;
-
-//         top: 50%;
-//         left: 65%;
-//         transform: translate(-50%, -50%);
-//     }
-// }
-// .background-secondBlue{
-//     position: relative;
-//     width: 170%;
-//     height: 100%;
-
-//     left: -150%;
-//     bottom: 61%;
-
-//     background: #70CDFF;
-//     border-radius: 0px 40px 0px 0px;
-// }
-// `;
+`
+export const BackgroundSecond = styled.div`
+  position: relative;
+  width: 40%;
+  height: 100%;
+  left: 60%;
+  background: #FBFBFB;
+`
+export const WomanImage = styled.img`
+  position: relative;
+  width: 60%;
+  height: 60%;
+  top: 50%;
+  left: 65%;
+  transform: translate(-50%, -50%);
+`
+export const BackgroundSecondBlue = styled.div`
+  position: relative;
+  width: 170%;
+  height: 100%;
+  left: -150%;
+  bottom: 61%;
+  background: #70CDFF;
+  border-radius: 0px 40px 0px 0px;
+`

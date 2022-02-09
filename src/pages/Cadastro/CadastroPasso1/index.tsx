@@ -5,14 +5,12 @@ import React, {
   ChangeEvent
 } from 'react';
 import { useNavigate } from 'react-router-dom';
-import {
-  Input,
-  InputPhone } from '../../../components/Input/Input';
+import Input from '../../../components/Inputs/Input';
 import {
   Enfermeiro,
   Paciente,
   Recepcionista,
-  Medico } from '../../../components/TypeUser';
+  Medico } from '../../../components/TypeUsers';
 import {
   Container,
   Content,
@@ -22,7 +20,7 @@ import {
   UserProfile,
   InputRadio,
   ButtonNext } from './style';
-import HOSPTEC from '../../../assets/images/login/HOSPTEC.svg';
+import HOSPTEC from '../../../assets/login/HOSPTEC.svg';
 
 interface User{
   phone: string;
@@ -118,8 +116,9 @@ const CadastroPasso1 = () => {
                     </LineForm>
                     <LineForm>
                       <p>Digite seu número</p>
-                      <InputPhone
+                      <Input
                       id="phone"
+                      maskType='phone'
                       type="tel"
                       placeholder="(XX) XXXXX - XXXX"
                       name="phone"

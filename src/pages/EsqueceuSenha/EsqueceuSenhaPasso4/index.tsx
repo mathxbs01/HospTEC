@@ -3,10 +3,10 @@ import React, { InputHTMLAttributes, useCallback } from 'react';
 
 import { Container, Content, FirstColumn, Form, ModalIntern, SecondColumn, Separator} from './style';
 
-import FORGOTPASS from '../../../assets/images/login/EsqueceuSenha.svg';
-import HOSPTEC from '../../../assets/images/login/HOSPTEC.svg';
+import FORGOTPASS from '../../../assets/login/EsqueceuSenha.svg';
+import HOSPTEC from '../../../assets/login/HOSPTEC.svg';
 
-import { Input } from '../../../components/Input/Input';
+import Input from '../../../components/Inputs/Input';
 
 const EsqueceuPasso4 = () => {
 

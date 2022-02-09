@@ -1,16 +1,15 @@
-import React, { InputHTMLAttributes, useState, useCallback, Children } from 'react';
+import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { convertCompilerOptionsFromJson } from 'typescript';
-import { Input, InputCEP } from '../../../components/Input/Input';
+import Input  from '../../../components/Inputs/Input';
 import { Container, Content, Header, Form, InputForm, LineForm, ButtonNext, LineFull } from './style';
 
-import HOSPTEC from '../../../assets/images/login/HOSPTEC.svg';
+import HOSPTEC from '../../../assets/login/HOSPTEC.svg';
 
 
 
 const CadastroPasso2 = () => {
 
-    const [inputCep, setInputCep] = React.useState('');
+    const [inputCep, setInputCep] = useState('');
     const cep = (document.getElementById("cep") as HTMLInputElement);
     const address = (document.getElementById("address") as HTMLInputElement);
     const neighborhood = (document.getElementById("neighborhood") as HTMLInputElement);
@@ -32,18 +31,12 @@ const CadastroPasso2 = () => {
         }
     }
 
-
     cep?.addEventListener("focusout", searchCep);
-
-
-
-
 
     const navigateLogin = useNavigate();
         function handleLogin(){
             navigateLogin('/');
         }
-
 
     return(
         <div id="pagina-cadastro-2">
@@ -58,9 +51,10 @@ const CadastroPasso2 = () => {
                             <InputForm>
                                 <LineForm>
                                     <p>Digite seu CEP</p>
-                                    <InputCEP
+                                    <Input
                                     id="cep"
                                     type="text"
+                                    maskType='cep'
                                     placeholder="XXXXX-XXX"
                                     onChange={(e) => setInputCep(e.target.value)}
                                     required

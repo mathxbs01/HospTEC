@@ -3,10 +3,10 @@ import React, { InputHTMLAttributes, useCallback } from 'react';
 
 import { Container, Content, FirstColumn, Form, ModalIntern, SecondColumn} from './style';
 
-import FORGOTPASS from '../../../assets/images/login/EsqueceuSenha.svg';
-import HOSPTEC from '../../../assets/images/login/HOSPTEC.svg';
+import FORGOTPASS from '../../../assets/login/EsqueceuSenha.svg';
+import HOSPTEC from '../../../assets/login/HOSPTEC.svg';
 
-import { InputNumberCode } from '../../../components/Input/Input';
+import Input from '../../../components/Inputs/Input';
 
 const EsqueceuPasso3 = () => {
 
@@ -46,9 +46,10 @@ const EsqueceuPasso3 = () => {
                             <p>Encontre sua conta</p>
                             <Form id="loginForm">
                                 <p>Digite o código</p>
-                                <InputNumberCode
+                                <Input
                                 id="code"
                                 type="text"
+                                maskType="numberCode"
                                 placeholder="*****"
                                 onChange={(e) => setInputCode(e.target.value)}
                                 required/>

@@ -1,19 +1,16 @@
-import React, { InputHTMLAttributes, useCallback } from "react"
-import { InputForm, LineForm} from '../pages/login/cadastroPasso1/style';
-import { Input, InputCPF } from './Input/Input';
+import { InputForm, LineForm} from '../../pages/Cadastro/CadastroPasso1/style';
+import Input from '../Inputs/Input';
 
-type InputProps = InputHTMLAttributes<HTMLInputElement>;
-
-
-export function Paciente(props:InputProps) {
+const Paciente = () => {
 
     return(
         <div id="paciente">
             <InputForm>
                 <LineForm>
                     <p>Digite seu CPF</p>
-                    <InputCPF
+                    <Input
                     type="text"
+                    maskType="CPF"
                     placeholder="XXX.XXX.XXX-XX"
                     required
                     />
@@ -46,14 +43,15 @@ export function Paciente(props:InputProps) {
         </div>
     )
 }
-export function Recepcionista(props:InputProps) {
+const Recepcionista = () => {
     return(
         <div id="recepcionista">
             <InputForm>
                 <LineForm>
                     <p>Digite seu CPF</p>
-                    <InputCPF
+                    <Input
                     type="text"
+                    maskType="CPF"
                     placeholder="XXX.XXX.XXX-XX"
                     required
                     />
@@ -86,14 +84,15 @@ export function Recepcionista(props:InputProps) {
         </div>
     )
 }
-export function Enfermeiro(props:InputProps) {
+const Enfermeiro = () => {
     return(
         <div id="enfermeiro">
             <InputForm>
                 <LineForm>
                     <p>Digite seu CPF</p>
-                    <InputCPF
+                    <Input
                     type="text"
+                    maskType="CPF"
                     placeholder="XXX.XXX.XXX-XX"
                     required
                     />
@@ -126,14 +125,15 @@ export function Enfermeiro(props:InputProps) {
         </div>
     )
 }
-export function Medico(props:InputProps) {
+const Medico = () => {
     return(
         <div id="medico">
             <InputForm>
                 <LineForm>
                     <p>Digite seu CPF</p>
-                    <InputCPF
+                    <Input
                     type="text"
+                    maskType="CPF"
                     placeholder="XXX.XXX.XXX-XX"
                     required
                     />
@@ -174,4 +174,11 @@ export function Medico(props:InputProps) {
             </InputForm>
         </div>
     )
+}
+
+export {
+  Paciente,
+  Enfermeiro,
+  Medico,
+  Recepcionista
 }

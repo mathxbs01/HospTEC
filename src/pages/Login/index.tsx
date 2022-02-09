@@ -3,10 +3,10 @@ import React, { InputHTMLAttributes, useCallback } from 'react';
 
 import { Container, Content, FirstColumn, Form, ModalIntern, SecondColumn, Separator} from './style';
 
-import illustrationMulher from '../../../assets/images/login/loginMulher.svg';
-import HOSPTEC from '../../../assets/images/login/HOSPTEC.svg';
+import illustrationMulher from '../../assets/login/loginMulher.svg';
+import HOSPTEC from '../../assets/login/HOSPTEC.svg';
 
-import { Input } from '../../../components/Input';
+import Input from '../../components/Inputs/Input';
 
 const Login = () => {
 
