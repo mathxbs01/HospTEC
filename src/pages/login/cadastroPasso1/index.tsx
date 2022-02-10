@@ -178,7 +178,7 @@ export function CadastroPasso1(){
                             { profile === "Medico" && <Medico className="type-user" id="user-medico"/> }
                             <InputForm id="create-password">
                                 <LineForm>
-                                    <p>DIgite sua senha</p>
+                                    <p>Digite sua senha</p>
                                     <Input
                                     id="pass"
                                     type="password"
@@ -190,7 +190,7 @@ export function CadastroPasso1(){
                                     className="material-icons" id="eye">visibility_off</span>
                                 </LineForm>
                                 <LineForm>
-                                    <p>DIgite sua senha novamente</p>
+                                    <p>Digite sua senha novamente</p>
                                     <Input
                                     id="pass-confirmed"
                                     type="password"

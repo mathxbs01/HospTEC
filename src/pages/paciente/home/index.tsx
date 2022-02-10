@@ -6,22 +6,23 @@ import { BackgroundHome } from '../../../components/Home';
 import MinhasConsultas from '../../../assets/images/paciente/minhasConsultas.svg'
 import CAMADAS from '../../../assets/images/home/Camadas.svg';
 
-import { Card } from './style';
+import { Card, Container, ModalInter } from './style';
 
 export function HomePaciente(){ 
 
 
     return(
-        <div id="home-paciente">
-            <BackgroundHome>
-                <div className="modal-cards">
-                    <Card>
-                        <img src={MinhasConsultas}/>
-                        <p>Teste</p>
-                    </Card>
-                    
-                </div>
-            </BackgroundHome>
+        <div id="home-paciente" className="home">
+            <Container>
+                <BackgroundHome>
+                    <ModalInter>
+                        <Card>
+                            <img src={MinhasConsultas}/>
+                            <p>Minhas Consultas</p>
+                        </Card>
+                    </ModalInter>
+                </BackgroundHome>
+            </Container>
         </div>
     )
 }

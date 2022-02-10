@@ -4,12 +4,13 @@ import illustrationMulherHome from '../assets/images/home/homeMulher.svg';
 import HOSPTECLogotipo from '../assets/images/home/logotipo.svg';
 import styled from "styled-components";
 
-
-type BackgroundPros = HtmlHTMLAttributes<HTMLAreaElement>;
-
+import { Card, Container, ModalInter } from '../pages/paciente/home/style';
 
 
-const Background = styled.div`
+type BackgroundPros = InputHTMLAttributes<HTMLInputElement>;
+
+
+export const Background = styled.div`
     *{
         margin: 0;
         padding: 0;
@@ -20,7 +21,7 @@ const Background = styled.div`
     display: flex;
     height: 100vh;
 
-    /* overflow: hidden; */
+    overflow: hidden;
 
 
     .background-primaryBlue{
@@ -93,7 +94,7 @@ const Background = styled.div`
         position: relative;
         width: 40%;
         height: 100%;
-        left: 60%;
+        left: 60.05%;
 
         background: #FBFBFB;
         #illustrationMulherHome{
@@ -112,35 +113,33 @@ const Background = styled.div`
         height: 100%;
 
         left: -150%;
-        bottom: 61%;
+        bottom: 61.1%;
 
         background: #70CDFF;
         border-radius: 0px 40px 0px 0px;
     }
 `; 
 
-export function BackgroundHome(props: BackgroundPros){
-    
+// export function BackgroundHome(props: BackgroundPros){
+export function BackgroundHome(props: BackgroundPros){    
     return(
         <Background className="fixed" >
-        <div className="background-primaryBlue">
-            <div className="background-primaryWhite-up">
-                <strong className="title">Bem vindo a página inicial</strong>
-                <div className="box-logotipo">
-                    <img id="logotipo"src={HOSPTECLogotipo} alt="Logotipo do hospital"/>
+            <div className="background-primaryBlue">
+                <div className="background-primaryWhite-up">
+                    <strong className="title">Bem vindo a página inicial</strong>
+                    <div className="box-logotipo">
+                        <img id="logotipo"src={HOSPTECLogotipo} alt="Logotipo do hospital"/>
+                    </div>
                 </div>
-            </div>
-            <div className="modal-intern">
-                <div className="background-secondWhite-right">
-                    <img id="illustrationMulherHome"src={illustrationMulherHome} alt="Ilustração mulher da pagina home"/>
-                    <div className="background-secondBlue" />
+                <div className="modal-intern">
+                    <div className="background-secondWhite-right">
+                        <img id="illustrationMulherHome"src={illustrationMulherHome} alt="Ilustração mulher da pagina home"/>
+                        <div className="background-secondBlue" />
+                    </div>
                 </div>
-            </div>
-           
-        </div>        
-    </Background>
+            </div>        
+        </Background>
     )
-
 }
 
 
