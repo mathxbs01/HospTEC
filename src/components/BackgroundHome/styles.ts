@@ -1,9 +1,7 @@
 import styled from "styled-components";
-import theme from "../../styles/theme";
 
 export const Background = styled.div`
 display: flex;
-position: relative;
 align-items: flex-end;
 background: ${({theme}) => theme.colors.firstBackground};
 height: 100vh;
@@ -11,7 +9,6 @@ width: 100vw;
 `
 export const PrimaryBlue = styled.div`
 display: flex;
-position: relative;
 flex-direction: row;
 width: 94%;
 height: 98%;
@@ -20,38 +17,29 @@ box-shadow: 5px 4px 5px rgba(0, 0, 0, 0.25);
 border-radius: 20px 20px 0px 0px;
 `
 export const Container = styled.div`
-display: flex;
-position: relative;
 width: 75%;
 height: 100%;
 background: ${({theme}) => theme.colors.secondBackground};
 `
 export const Header = styled.div`
-display: flex;
-position: relative;
 width: 100%;
 height: 20%;
 background: ${({theme}) => theme.colors.thirdBackground};
 border-radius: 40px 0 0 40px;
 `
 export const ContentBackground = styled.div`
-display: flex;
-position: relative;
 width: 100%;
 height: 80%;
-background-color: green;
-border-radius: 0 20px 0 0;
+background-color: ${({theme}) => theme.colors.thirdBackground};
 `
 export const Content = styled.div`
-display: flex;
-position: relative;
-width: 10%;
-height: 10%;
-background: red;
+width: 100%;
+height: 100%;
+background: ${({theme}) => theme.colors.secondBackground};
+border-radius: 0 40px 0 0;
 `
 export const IllustrationContainer = styled.div`
 display: flex;
-position: relative;
 width: 24%;
 height: 100%;
 background: ${({theme}) => theme.colors.thirdBackground};

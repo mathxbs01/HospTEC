@@ -53,28 +53,6 @@ const BackgroundHome = (
           <IllustrationContainer>
 
           </IllustrationContainer>
-            {/* <PrimaryWhite>
-                <Strong>
-                  {title}
-                </Strong>
-                <LogoContainer>
-                  <Logo
-                    src={HOSPTECLogotipo}
-                    alt="Logotipo do hospital"
-                  />
-                </LogoContainer>
-            </PrimaryWhite>
-            <InternContainer>
-                <BackgroundSecond>
-                    <WomanImage
-                      src={illustrationMulherHome}
-                      alt="Ilustração mulher da pagina home"
-                    />
-                    <BackgroundSecondBlue>
-                      {children}
-                    </BackgroundSecondBlue>
-                </BackgroundSecond>
-            </InternContainer> */}
         </PrimaryBlue>
     </Background>
     )
