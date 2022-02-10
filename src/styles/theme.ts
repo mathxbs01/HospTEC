@@ -2,7 +2,17 @@ import { createGlobalStyle, DefaultTheme } from 'styled-components'
 
 const theme: DefaultTheme = {
   colors: {
-    teste: "#000"
+    firstBackground: "#B6E2DA4D",
+    secondBackground: "#70CDFF",
+    thirdBackground: "#FBFBFB"
+  },
+  fonts: {
+    sansSerif: "sans-serif"
+  },
+  fontSizes: {
+    small: "12px",
+    middle: "16px",
+    big: "32px"
   }
 }
 

@@ -1,8 +1,12 @@
+import { HTMLAttributes } from 'react';
 import illustrationMulherHome from '../../assets/home/homeMulher.svg';
 import HOSPTECLogotipo from '../../assets/home/logotipo.svg';
+import Menu from '../Menu';
 import {
   Background,
   PrimaryBlue,
+  Container,
+  Header,
   PrimaryWhite,
   Strong,
   LogoContainer,
@@ -10,15 +14,48 @@ import {
   InternContainer,
   BackgroundSecond,
   WomanImage,
-  BackgroundSecondBlue
+  BackgroundSecondBlue,
+  ContentBackground,
+  Content,
+  IllustrationContainer,
 } from './styles'
 
-const BackgroundHome = () => (
-        <Background>
+interface BackgroundHomeProps extends HTMLAttributes<HTMLDivElement> {
+  children: JSX.Element
+  backgroundColor?: string
+  title?: string
+}
+
+const BackgroundHome = (
+  {
+  children,
+  title = "Bem vindo a página inicial",
+  backgroundColor,
+  ...rest
+  }:BackgroundHomeProps) => (
+        <Background
+        style={{
+          background: backgroundColor
+        }}
+        {...rest}
+        >
+          <Menu/>
         <PrimaryBlue>
-            <PrimaryWhite>
+          <Container>
+            <Header>
+            </Header>
+            <ContentBackground>
+            <Content>
+
+            </Content>
+            </ContentBackground>
+          </Container>
+          <IllustrationContainer>
+
+          </IllustrationContainer>
+            {/* <PrimaryWhite>
                 <Strong>
-                  Bem vindo a página inicial
+                  {title}
                 </Strong>
                 <LogoContainer>
                   <Logo
@@ -33,9 +70,11 @@ const BackgroundHome = () => (
                       src={illustrationMulherHome}
                       alt="Ilustração mulher da pagina home"
                     />
-                    <BackgroundSecondBlue/>
+                    <BackgroundSecondBlue>
+                      {children}
+                    </BackgroundSecondBlue>
                 </BackgroundSecond>
-            </InternContainer>
+            </InternContainer> */}
         </PrimaryBlue>
     </Background>
     )

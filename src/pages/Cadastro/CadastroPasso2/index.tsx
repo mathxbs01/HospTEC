@@ -16,7 +16,7 @@ const CadastroPasso2 = () => {
     const city= (document.getElementById("city") as HTMLInputElement);
     const uf = (document.getElementById("uf") as HTMLInputElement);
 
-    const searchCep = async() => {
+    const searchCep = async () => {
         const cepValue = cep.value;
         const url = `http://viacep.com.br/ws/${cepValue}/json/`;
         const dados = await fetch(url)
