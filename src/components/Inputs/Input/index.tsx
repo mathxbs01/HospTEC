@@ -1,15 +1,11 @@
-import { FormEvent, useCallback, HTMLAttributes, HTMLInputTypeAttribute } from "react"
+import { FormEvent, useCallback, HTMLAttributes, HTMLInputTypeAttribute, InputHTMLAttributes } from "react"
 
 import {FormInput} from './styles'
 
-interface InputProps extends HTMLAttributes<HTMLInputElement> {
-  type?: HTMLInputTypeAttribute
+interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
   maskType?: "phone" | "CPF" | "cep" | "numberCode" | "custom"
   regex?: RegExp | string
   maxLength?: number
-  required?: boolean
-  disabled?: boolean
-  name?: string
 }
 
 const Input = ({
