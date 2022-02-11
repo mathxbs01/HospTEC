@@ -1,7 +1,10 @@
+import { HTMLAttributes } from 'react';
 import { InputForm, LineForm} from '../../pages/Cadastro/CadastroPasso1/style';
 import Input from '../Inputs/Input';
 
-const Paciente = () => {
+type Iprops = HTMLAttributes<HTMLDivElement>
+
+const Paciente = (props: Iprops) => {
 
     return(
         <div id="paciente">
@@ -43,7 +46,7 @@ const Paciente = () => {
         </div>
     )
 }
-const Recepcionista = () => {
+const Recepcionista = (props: Iprops) => {
     return(
         <div id="recepcionista">
             <InputForm>
@@ -84,7 +87,7 @@ const Recepcionista = () => {
         </div>
     )
 }
-const Enfermeiro = () => {
+const Enfermeiro = (props: Iprops) => {
     return(
         <div id="enfermeiro">
             <InputForm>
@@ -125,7 +128,7 @@ const Enfermeiro = () => {
         </div>
     )
 }
-const Medico = () => {
+const Medico = (props: Iprops) => {
     return(
         <div id="medico">
             <InputForm>
