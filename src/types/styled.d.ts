@@ -3,6 +3,7 @@ interface IColors {
   firstBackground: string
   secondBackground: string
   thirdBackground: string
+  firstBackgroundButton: string
 }
 interface IFonts {
   sansSerif: string

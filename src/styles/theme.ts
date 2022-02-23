@@ -4,10 +4,11 @@ const theme: DefaultTheme = {
   colors: {
     firstBackground: "#B6E2DA4D",
     secondBackground: "#70CDFF",
-    thirdBackground: "#FBFBFB"
+    thirdBackground: "#FBFBFB", 
+    firstBackgroundButton: "#B6E2DA"
   },
   fonts: {
-    sansSerif: "sans-serif"
+    sansSerif: "Poppins"
   },
   fontSizes: {
     small: "12px",

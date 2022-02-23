@@ -5,11 +5,12 @@ export const Container = styled.div`
     justify-content: center;
     align-items: center;
     height: 100vh;
+    
 
     font-size: 14px;
 `;
 export const Content = styled.div`
-    background-color: #ffff;
+    background: ${({theme}) => theme.colors.thirdBackground};  
     display: flex;
     left: -0px;
 
@@ -24,7 +25,7 @@ export const Content = styled.div`
     ::before{
         content: "";
         position: absolute;
-        background-color: #70CDFF;
+        background: ${({theme}) => theme.colors.secondBackground};
         width: 381px;
         height: 100%;
         margin-left: 563px;    
@@ -37,37 +38,41 @@ export const ModalIntern = styled.div`
     margin-top: 76px;
 `;
 export const FirstColumn = styled.div`
+    position: relative;
     text-align: center;
     flex: 6;
     p{
-        position: relative;
         margin-top: 13px;   
 
-        font-family: Poppins;
-        font-style: normal;
-        font-weight: normal;
         font-size: 14px;
         line-height: 21px;
         text-align: center;
-
-        color: #818181;
     }
     .buttons{
-        position: relative;
         display: flex;
-
         button{
-            position: relative;
             width: 192px;
         }
     }
     .buttons.left{
-        position: relative;
         display: flex;
         &::after{
             content: '';
             margin-right: 30px;
         }
+    }
+`;
+export const Header = styled.div`
+    position: relative;
+    
+    p{
+        margin-top: 13px;   
+
+        font-size: 14px;
+        line-height: 21px;
+        text-align: center;
+
+        opacity: 80%;
     }
 `;
 export const Form = styled.form`
@@ -82,7 +87,7 @@ export const Form = styled.form`
         height: 50px;
         margin-top: 16px;
 
-        background: #B6E2DA;
+        background: ${({theme}) => theme.colors.firstBackgroundButton};
         border: 1px solid #000000;
         box-sizing: border-box;
         border-radius: 25px;
@@ -103,8 +108,6 @@ export const Form = styled.form`
         width: 130px;
         height: 22px;
         
-        font-family: Poppins;
-        font-style: normal;
         font-weight: bold;
         font-size: 14px;
         line-height: 21px;
@@ -138,31 +141,21 @@ export const SecondColumn = styled.div`
     position: relative;
     margin-top: 61px;
     text-align: center;
+    align-items: center;
     flex: 4;
     z-index: 10;
+    color: #FFFFFF;
     p{
-        font-family: Poppins;
-        font-style: normal;
-        font-weight: normal;
         font-size: 14px;
         line-height: 21px;
-        
-        color: #FFFFFF;
     }
     img{
-        align-self: center;
         margin-top: 57px;
     }
     strong{
-        position: relative;
-        font-family: Poppins;
-        font-style: normal;
         font-weight: 900;
         font-size: 36px;
         line-height: 54px;
-
-        text-align: center;
-        color: #ffff;
     }
 `;
 

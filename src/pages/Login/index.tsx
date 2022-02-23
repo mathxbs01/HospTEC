@@ -1,7 +1,7 @@
 import { useNavigate } from 'react-router-dom';
 import React, { InputHTMLAttributes, useCallback } from 'react';
 
-import { Container, Content, FirstColumn, Form, ModalIntern, SecondColumn, Separator} from './style';
+import { Container, Content, FirstColumn, Form, Header, ModalIntern, SecondColumn, Separator} from './style';
 
 import illustrationMulher from '../../assets/login/loginMulher.svg';
 import HOSPTEC from '../../assets/login/HOSPTEC.svg';
@@ -56,8 +56,10 @@ const Login = () => {
                 <Content className="content">
                     <FirstColumn>
                         <ModalIntern>
-                        <img src={HOSPTEC} alt="Logo HospTec" />
-                            <p>Por favor, faça o seu login para ter o acesso!</p>
+                            <Header>
+                                <img src={HOSPTEC} alt="Logo HospTec" />
+                                <p>Por favor, faça o seu login para ter o acesso!</p>
+                            </Header>
                             <Form id="loginForm">
                                 <p>Digite seu e-mail</p>
                                 <Input

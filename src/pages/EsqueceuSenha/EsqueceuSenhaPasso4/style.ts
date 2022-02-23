@@ -9,7 +9,7 @@ export const Container = styled.div`
     font-size: 14px;
 `;
 export const Content = styled.div`
-    background-color: #ffff;
+    background: ${({theme}) => theme.colors.thirdBackground};  
     display: flex;
     left: -0px;
 
@@ -24,7 +24,7 @@ export const Content = styled.div`
     ::before{
         content: "";
         position: absolute;
-        background-color: #70CDFF;
+        background: ${({theme}) => theme.colors.secondBackground};
         width: 381px;
         height: 100%;
         margin-left: 563px;    
@@ -87,6 +87,16 @@ export const FirstColumn = styled.div`
         }
     }
 `;
+export const Header = styled.div`
+    position: relative;
+    p{
+        font-size: 14px;
+        line-height: 21px;
+        text-align: center;
+
+        opacity: 80%;
+    }
+`;
 export const Form = styled.form`
     display: flex;
     flex-direction: column;
@@ -98,7 +108,7 @@ export const Form = styled.form`
         height: 50px;
         margin-top: 16px;
 
-        background: #B6E2DA;
+        background: ${({theme}) => theme.colors.firstBackgroundButton};
         border: 1px solid #000000;
         box-sizing: border-box;
         border-radius: 25px;
@@ -153,39 +163,25 @@ export const Form = styled.form`
 export const SecondColumn = styled.div`
     position: relative;
     margin-top: 61px;
+    align-items: center;
     text-align: center;
     flex: 4;
     z-index: 10;
     p{
-        font-family: Poppins;
-        font-style: normal;
-        font-weight: normal;
         font-size: 14px;
         line-height: 21px;
         
         color: #FFFFFF;
     }
     img{
-        align-self: center;
         margin-top: 57px;
     }
     strong{
-        position: relative;
-        font-family: Poppins;
-        font-style: normal;
         font-weight: 900;
         font-size: 36px;
         line-height: 54px;
 
-        text-align: center;
         color: #ffff;
     }
-`;
-
-export const Separator = styled.div`
-        content: "";
-        width: 414px; 
-        height: 1px;
-        background: #a8a8b3;
 `;
 

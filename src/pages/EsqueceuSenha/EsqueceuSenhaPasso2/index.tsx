@@ -1,7 +1,17 @@
 import { useNavigate } from 'react-router-dom';
 import React, { InputHTMLAttributes, useCallback } from 'react';
 
-import { Container, Content, FirstColumn, Form, InputRadio, ModalIntern, RadioInputs, SecondColumn} from './style';
+import { 
+Container, 
+Content, 
+FirstColumn, 
+Form, 
+Header, 
+InputRadio, 
+ModalIntern, 
+RadioInputs, 
+SecondColumn
+} from './style';
 
 import FORGOTPASS from '../../../assets/login/EsqueceuSenha.svg';
 import HOSPTEC from '../../../assets/login/HOSPTEC.svg';
@@ -32,11 +42,11 @@ const EsqueceuPasso2 = () => {
                 <Content className="content">
                     <FirstColumn>
                         <ModalIntern>
-                        <img src={HOSPTEC} alt="Logo HospTec" />
-                        <div className="text-header">
+                        <img src={HOSPTEC} alt="Logo HospTec" />                            
+                        <Header>
                             <p>Como você deseja receber o código</p>
                             <p>para redefinir sua senha?</p>
-                        </div>
+                        </Header>
                             <Form id="loginForm">
                                 <RadioInputs>
                                     <InputRadio

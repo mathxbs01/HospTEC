@@ -1,7 +1,15 @@
 import { useNavigate } from 'react-router-dom';
 import React, { InputHTMLAttributes, useCallback } from 'react';
 
-import { Container, Content, FirstColumn, Form, ModalIntern, SecondColumn, Separator} from './style';
+import {
+Container, 
+Content, 
+FirstColumn,
+Header, 
+Form, 
+ModalIntern, 
+SecondColumn
+} from './style';
 
 import FORGOTPASS from '../../../assets/login/EsqueceuSenha.svg';
 import HOSPTEC from '../../../assets/login/HOSPTEC.svg';
@@ -60,10 +68,10 @@ const EsqueceuPasso4 = () => {
                 <Content className="content">
                     <FirstColumn>
                         <ModalIntern>
-                            <div className="header">
+                            <Header>
                                 <img src={HOSPTEC} alt="Logo HospTec" />
                                 <p>Por favor, faça o seu login para ter o acesso!</p>
-                            </div>
+                            </Header>
                             <Form id="create-password">
                                 <p>Nova senha</p>
                                 <Input
