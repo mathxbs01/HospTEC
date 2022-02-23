@@ -15,6 +15,7 @@ const Paciente = (props: Iprops) => {
                     type="text"
                     maskType="CPF"
                     placeholder="XXX.XXX.XXX-XX"
+                    maxLength={12}
                     required
                     />
                 </LineForm>
@@ -56,6 +57,7 @@ const Recepcionista = (props: Iprops) => {
                     type="text"
                     maskType="CPF"
                     placeholder="XXX.XXX.XXX-XX"
+                    maxLength={12}
                     required
                     />
                 </LineForm>
@@ -97,6 +99,7 @@ const Enfermeiro = (props: Iprops) => {
                     type="text"
                     maskType="CPF"
                     placeholder="XXX.XXX.XXX-XX"
+                    maxLength={12}
                     required
                     />
                 </LineForm>
@@ -138,6 +141,7 @@ const Medico = (props: Iprops) => {
                     type="text"
                     maskType="CPF"
                     placeholder="XXX.XXX.XXX-XX"
+                    maxLength={12}
                     required
                     />
                 </LineForm>

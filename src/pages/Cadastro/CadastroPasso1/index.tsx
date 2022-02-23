@@ -119,6 +119,7 @@ const CadastroPasso1 = () => {
                       <Input
                       id="phone"
                       maskType='phone'
+                      maxLength={13}
                       type="tel"
                       placeholder="(XX) XXXXX - XXXX"
                       name="phone"

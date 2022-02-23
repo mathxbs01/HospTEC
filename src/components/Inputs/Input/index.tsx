@@ -3,7 +3,7 @@ import { FormEvent, useCallback, HTMLAttributes, HTMLInputTypeAttribute, InputHT
 import {FormInput} from './styles'
 
 interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
-  maskType?: "phone" | "CPF" | "cep" | "numberCode" | "custom"
+  maskType?: "phone" | "CPF" | "cep" | "numberCode" | "custom" 
   regex?: RegExp | string
   maxLength?: number
 }
@@ -40,7 +40,7 @@ const Input = ({
   const handleKeyUp = useCallback((e: FormEvent<HTMLInputElement>) => {
       e.currentTarget.maxLength = maxLength;
       let value = e.currentTarget.value;
-      value = value.replace(/[^0-9]/g, "");
+      value = (maskType === "custom" ? value : value.replace(/[^0-9]/g, ""));
       value = value.replace(regEx[maskType].exp, regEx[maskType].sub);
       e.currentTarget.value = value;
   },[]);
