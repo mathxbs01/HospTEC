@@ -7,9 +7,7 @@ import { Card } from './style';
 
 const HomePaciente = (): JSX.Element => (
         <div>
-            <BackgroundHome
-            title='Suas consultas'
-            >
+            <BackgroundHome>
                 <div className="modal-cards">
                     <Card>
                         <img src={MinhasConsultas}/>

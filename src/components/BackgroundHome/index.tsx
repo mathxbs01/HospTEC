@@ -18,6 +18,9 @@ import {
   ContentBackground,
   Content,
   IllustrationContainer,
+  TextHeader,
+  Illustration,
+  ViewIllustration,
 } from './styles'
 
 interface BackgroundHomeProps extends HTMLAttributes<HTMLDivElement> {
@@ -38,20 +41,29 @@ const BackgroundHome = (
           background: backgroundColor
         }}
         {...rest}
+        
         >
           <Menu/>
         <PrimaryBlue>
           <Container>
             <Header>
+              <LogoContainer>
+                <Logo src={HOSPTECLogotipo}/>
+              </LogoContainer>
+              <TextHeader>
+                {title}
+              </TextHeader>
             </Header>
             <ContentBackground>
             <Content>
-
+              {children}
             </Content>
             </ContentBackground>
           </Container>
           <IllustrationContainer>
-
+            <ViewIllustration>
+              <Illustration src={illustrationMulherHome}/>
+            </ViewIllustration>
           </IllustrationContainer>
         </PrimaryBlue>
     </Background>

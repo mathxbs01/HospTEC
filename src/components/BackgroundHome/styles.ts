@@ -22,6 +22,7 @@ height: 100%;
 background: ${({theme}) => theme.colors.secondBackground};
 `
 export const Header = styled.div`
+display: flex;
 width: 100%;
 height: 20%;
 background: ${({theme}) => theme.colors.thirdBackground};
@@ -45,8 +46,6 @@ height: 100%;
 background: ${({theme}) => theme.colors.thirdBackground};
 border-radius: 0px 20px 0px 0px;
 `
-
-
 export const PrimaryWhite = styled.div`
   position: relative;
   width: 90%;
@@ -65,17 +64,16 @@ export const Strong = styled.strong`
   font-size: 36px;
   line-height: 10%;
   text-align: center;
-  color: #0077B6;
+  background: ${({theme}) => theme.colors.secondBackground};
   text-shadow: 4px 4px 5px rgba(0, 0, 0, 0.05);
 `
 export const LogoContainer = styled.div`
   position: relative;
-  display: block;
   width: 15vh;
   height: 15vh;
   top: 10%;
   right: 5%;
-  background: #FFFF;
+  background: ${({theme}) => theme.colors.thirdBackground};
   box-shadow: 5px 4px 5px rgba(0, 0, 0, 0.25);
   border-radius: 15%;
 `
@@ -100,7 +98,7 @@ export const BackgroundSecond = styled.div`
   width: 40%;
   height: 100%;
   left: 60%;
-  background: #FBFBFB;
+  background: ${({theme}) => theme.colors.thirdBackground};
 `
 export const WomanImage = styled.img`
   position: relative;
@@ -116,6 +114,30 @@ export const BackgroundSecondBlue = styled.div`
   height: 100%;
   left: -150%;
   bottom: 61%;
-  background: #70CDFF;
+  background: ${({theme}) => theme.colors.secondBackground};
   border-radius: 0px 40px 0px 0px;
+`
+export const TextHeader = styled.p`
+  position: relative;
+  top: 35%;
+  font-size: 6vh;
+  font-weight: bold;
+  line-height: 100%;
+  color: #0077B6;
+  text-shadow: 4px 4px 5px rgba(0, 0, 0, 0.05);
+`
+export const ViewIllustration = styled.div`
+  position: relative;
+  margin-top: 50%;
+  width: 70%;
+  background: ${({theme}) => theme.colors.thirdBackground};
+  left: 50%;
+  transform: translate(-50%);
+
+`
+export const Illustration = styled.img`
+  position: relative;
+  width: 100%;
+  margin-top: 50%;
+
 `
