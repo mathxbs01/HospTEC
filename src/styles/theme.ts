@@ -14,6 +14,11 @@ const theme: DefaultTheme = {
     small: "12px",
     middle: "16px",
     big: "32px"
+  },
+  colorText: {
+    firstColor: "#000000",
+    secondColor: "#0077B6",
+    thirdColor: "#FFFFFF"
   }
 }
 

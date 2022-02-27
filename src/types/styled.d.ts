@@ -13,10 +13,16 @@ interface IFontsSizes {
   middle: string
   big: string
 }
+interface IFontsColor {
+  firstColor: string
+  secondColor: string
+  thirdColor: string
+}
 declare module 'styled-components' {
   export interface DefaultTheme {
     colors: IColors
     fonts: IFonts
     fontSizes: IFontsSizes
+    colorText: IFontsColor
   }
 }

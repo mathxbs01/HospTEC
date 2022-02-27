@@ -1,22 +1,30 @@
 import BackgroundHome from '../../components/BackgroundHome';
 
 import MinhasConsultas from '../../assets/paciente/minhasConsultas.svg'
+import MinhasReceitas from '../../assets/paciente/minhasReceitas.svg'
+import MeuPerfil from '../../assets/paciente/meuPerfil.svg'
 
-import { Card } from './style';
+import CardHome from '../../components/CardHome';
 
 
-const HomePaciente = (): JSX.Element => (
+const HomePaciente: React.FC = () => {
+    return(
         <div>
-            <BackgroundHome>
-                <div className="modal-cards">
-                    <Card>
-                        <img src={MinhasConsultas}/>
-                        <p>Teste</p>
-                    </Card>
-                </div>
-            </BackgroundHome>
-        </div>
+        <BackgroundHome>
+            <div className="modal-cards">
+                <CardHome
+                image={MinhasConsultas}
+                text='Minhas Consultas'/>
+                <CardHome 
+                image={MinhasReceitas}
+                text='Minhas receitas médicas'/>
+                <CardHome 
+                image={MeuPerfil}
+                text='Meu Perfil'/>    
+            </div>
+        </BackgroundHome>
+    </div>
     )
-
+}
 
 export default HomePaciente
