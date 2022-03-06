@@ -1,7 +1,8 @@
 import { HTMLAttributes } from 'react';
 import illustrationMulherHome from '../../assets/home/homeMulher.svg';
 import HOSPTECLogotipo from '../../assets/home/logotipo.svg';
-import Menu from '../Menu';
+import Menu from '../../components/Menu';
+import { MenuProps } from '../../types/interfaces';
 import {
   Background,
   PrimaryBlue,
@@ -21,29 +22,32 @@ import {
   TextHeader,
   Illustration,
   ViewIllustration,
+  HelloUser,
+  TextDo,
 } from './styles'
 
-interface BackgroundHomeProps extends HTMLAttributes<HTMLDivElement> {
+interface BackgroundHomeProps extends MenuProps {
   children: JSX.Element
   backgroundColor?: string
   title?: string
+  welcomeUser?: string
+  subWelcome?: string
 }
 
 const BackgroundHome = (
   {
   children,
   title = "Bem vindo a página inicial",
+  welcomeUser,
   backgroundColor,
+  typeSecondButton,
+  homeButton,
   ...rest
   }:BackgroundHomeProps) => (
-        <Background
-        style={{
-          background: backgroundColor
-        }}
-        {...rest}
-        
-        >
-          <Menu/>
+        <Background>
+        <Menu 
+         homeButton={false}
+        />
         <PrimaryBlue>
           <Container>
             <Header>
@@ -56,6 +60,12 @@ const BackgroundHome = (
             </Header>
             <ContentBackground>
             <Content>
+              <HelloUser>
+                {welcomeUser}
+              </HelloUser>
+              <TextDo>
+                O que deseja fazer?
+              </TextDo>
               {children}
             </Content>
             </ContentBackground>

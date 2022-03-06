@@ -1,24 +1,21 @@
 import { HTMLAttributes } from 'react';
 
-
 import { 
 Card, 
 ImageCard, 
 TextCard } from './style';
     
-interface BackgroundHomeProps extends HTMLAttributes<HTMLDivElement> {
-  children?: JSX.Element
+interface CardHomeProps extends HTMLAttributes<HTMLDivElement> {
   image?: string
   text?: string
 }
 
 const CardHome = (
   {
-  children,
   image,
   text,
   ...rest
-  }:BackgroundHomeProps) => (
+  }:CardHomeProps) => (
     <Card>
         <ImageCard src={image}/>
         <TextCard>

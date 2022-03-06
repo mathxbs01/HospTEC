@@ -139,5 +139,24 @@ export const Illustration = styled.img`
   position: relative;
   width: 100%;
   margin-top: 50%;
-
+`
+export const HelloUser = styled.p`
+  position: relative;
+  width: 100%;
+  top: 10%;
+  margin-left: 6vh;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 42px;
+  color: ${({theme}) => theme.colorText.thirdColor};
+`
+export const TextDo = styled.p`
+  position: relative;
+  width: 100%;
+  top: 12%;
+  margin-left: 6vh;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  color: ${({theme}) => theme.colorText.thirdColor};
 `

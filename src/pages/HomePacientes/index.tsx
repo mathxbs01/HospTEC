@@ -10,20 +10,22 @@ import CardHome from '../../components/CardHome';
 const HomePaciente: React.FC = () => {
     return(
         <div>
-        <BackgroundHome>
-            <div className="modal-cards">
-                <CardHome
-                image={MinhasConsultas}
-                text='Minhas Consultas'/>
-                <CardHome 
-                image={MinhasReceitas}
-                text='Minhas receitas médicas'/>
-                <CardHome 
-                image={MeuPerfil}
-                text='Meu Perfil'/>    
-            </div>
-        </BackgroundHome>
-    </div>
+            <BackgroundHome 
+            welcomeUser={`Olá, ${'Matheus'}`}
+            > 
+                <div className="modal-cards">
+                    <CardHome
+                    image={MinhasConsultas}
+                    text='Minhas Consultas'/>
+                    <CardHome 
+                    image={MinhasReceitas}
+                    text='Minhas receitas médicas'/>
+                    <CardHome 
+                    image={MeuPerfil}
+                    text='Meu Perfil'/>    
+                </div>
+            </BackgroundHome>
+        </div>
     )
 }
 
